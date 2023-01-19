@@ -1,0 +1,30 @@
+{
+  "name": "student-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exemple.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavio-foa-dev/student-sequelize.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavio-foa-dev/student-sequelize/issues"
+  },
+  "homepage": "https://github.com/flavio-foa-dev/student-sequelize#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
