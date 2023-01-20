@@ -8,3 +8,8 @@
 - migrações com ORMs
 - migrações para criação de tabelas no banco
 - seed
+- Como funciona o modelo MVC
+- camada de controle
+- Sequelize para consultar o banco
+- rotas
+- HTTP GET
