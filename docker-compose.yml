@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  db:
+  database:
     image: mysql
     cap_add:
       - SYS_NICE
@@ -11,8 +11,8 @@ services:
     ports:
       - '3306:3306'
     volumes:
-      - db:/var/lib/mysql
-      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - database:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 volumes:
-  db:
+  database:
     driver: local
