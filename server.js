@@ -1,12 +1,13 @@
 const express = require('express');
+const usersRouter = require('./src/routes/usersRouter');
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/api/teste',(req, res) => {
-  res.status(200).send({message: 'teste ok certo'});
-})
+
+
+app.use(usersRouter)
 
 app.listen(3000, () => console.log('listening on port 3000'));
 
