@@ -13,3 +13,17 @@
 - Sequelize para consultar o banco
 - rotas
 - HTTP GET
+- Sequelize para as operações de CRUD
+- requisição HTTP
+- Enviar dados através do corpo da requisição HTTP
+- rotas a cada método do controlador
+- Interpretar o diagrama de banco
+- Identificar os tipos de relação do projeto
+- Associar tabelas através de métodos do Sequelize
+- Referenciar tabelas associadas
+- Migrar tabelas associadas
+- Popular tabelas associadas
+- Adicionar a opção "Paranoid" para fazer a exclusão softDelete
+- migrações para adicionar colunas às tabelas
+- coluna deletedAt para utilizar o recurso de exclusão suave
+- Restaurar registros deletados via exclusão suave, utilizando o .restore()
