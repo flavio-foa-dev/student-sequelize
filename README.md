@@ -32,3 +32,33 @@
 - Utilizar um escopo adicional com o método .findAll()
 - Validar dados de entrada utilizando validadores próprios do Sequelize
 - Refinar e customizar validações de campos utilizando funções e JS puro
+- O que são escopos de associação
+- Como definir um novo escopo de associação
+- Utilizar métodos próprios/mixins em tabelas associadas
+- Adicionar um filtro de busca via parâmetros de query
+- Utilizar operadores para fazer operações com dados
+- Retornar resultados filtrados através de operadores
+- Filtrar e enumerar registros com métodos "finders"
+- Ordenar os resultados com a opção "order"
+- Agrupar registros com "group"
+- Passar comandos do SQL dentro do Sequelize com Sequelize.literal()
+- Criar métodos para atualizar mais de uma tabela
+- Adicionar transações às operações de banco via Sequelize
+
+
+
+queries de SELECT, a ordem lógica é a seguinte:
+
+FROM: pega as tabelas onde estão os dados
+
+WHERE: filtra os dados
+
+GROUP BY: agrega os dados
+
+HAVING: filtra os dados agregados
+
+SELECT: retorna os resultados
+
+ORDER BY: ordena os resultados
+
+LIMIT: limita a quantidade de resultados
