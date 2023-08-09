@@ -44,6 +44,18 @@
 - Passar comandos do SQL dentro do Sequelize com Sequelize.literal()
 - Criar métodos para atualizar mais de uma tabela
 - Adicionar transações às operações de banco via Sequelize
+- Criar métodos para atualizar mais de uma tabela
+- Adicionar transações às operações de banco via Sequelize
+- camada de serviços
+- Transferir a interface com a database do controlador para o serviço
+- controlador para acessar os serviços
+- Criar serviços específicos que herdem métodos da classe principal
+- Organizar os serviços criando um ponto de entrada (index.js)
+- Criar métodos específicos para um serviço/modelo
+- Passar parâmetros de controladores para serviços
+- Conectar serviços entre si
+- efatorar a aplicação para separar controladores e serviços
+
 
 
 
