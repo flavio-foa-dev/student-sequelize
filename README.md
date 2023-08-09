@@ -99,3 +99,28 @@ SELECT: retorna os resultados
 ORDER BY: ordena os resultados
 
 LIMIT: limita a quantidade de resultados
+
+# Associations
+Pessoas    Turmas  Matriculas
+A.hasmany(B)
+Pessoa.associate = function(models)
+Pessoas.hasMany(model.Turmas, {foreignkey: 'id-pessoa'})// padrao ele cria uma coluna PessoaId caso nao passe o paremetro
+Pessoas.hasMany(model.Matriculas) // padrao ele cria uma coluna MatriculaId
+
+- belongsTo = pertence a, e adicionado no outro lado da relacao
+- Turmas.belongsTo(modelsPessoas)
+- Matriculas.belongsTo(modelsPessoas)
+
+
+- Equipe.hasMany(Atleta); uma equipe tem muitos atleta
+- Atleta.belongsTo(Equipe); um atleta pertence a uma equipe
+
+- estudante_id:{
+-  allownull: false,
+-  type: Sequelize.Integer,
+-  references: { model: 'Pessoas, Key: "id"}
+- }
+
+- router.get('/pessoas/:estudante_id/matricula/matricula_id', function(req, res) {})
+- router.get('/pessoas/:estudante_id/matricula, function(req, res) {})
+-
